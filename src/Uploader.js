@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 
 function Uploader(props) {
     //Set api path, and store chosen file as a state variable
-    const backendURL = 'http://127.0.0.1:5000'
+    const backendURL = process.env.REACT_APP_BACKEND_BASEURL
     const [file, setFile] = useState(null)
     const [loading, setLoading] = useState(false)
     const onFileUpload = async () => {

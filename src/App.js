@@ -59,7 +59,7 @@ function App() {
           <TableBody>
             {paperData.map((row, index) => {
               return (
-                <TableRow key={index}>
+                <TableRow className='cell' key={index}>
                   <TableCell>{row.title}</TableCell>
                   <TableCell>{row.year}</TableCell>
                   <TableCell>{row.authors}</TableCell>
