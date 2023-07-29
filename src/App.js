@@ -57,7 +57,7 @@ function App() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {paperData.map((row, index) => {
+            {paperData && paperData.map((row, index) => {
               return (
                 <TableRow className='cell' key={index}>
                   <TableCell>{row.title}</TableCell>
